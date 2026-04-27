@@ -1,20 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>Blox Fruits Shop</title>
+<meta charset="UTF-8">
+<title>Blox Fruits Shop</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+header {
+  background: black;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0,255,200,0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background: #00ffcc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00ccaa;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: black;
+}
+</style>
 </head>
-<body style="background:black; color:white; text-align:center;">
 
-  <h1>🔥 BLOX FRUITS SHOP 🔥</h1>
+<body>
 
-  <h2>Acc VIP</h2>
-  <p>Level cao - Giá: 200k</p>
+<header>🔥 BLOX FRUITS SHOP 🔥</header>
 
-  <h2>Trái ác quỷ</h2>
-  <p>Leopard - 150k</p>
+<div class="container">
 
-  <h2>Liên hệ</h2>
-  <p>Zalo: 0123456789</p>
+  <div class="card">
+    <h2>Acc VIP</h2>
+    <p>Level cao - Full đồ</p>
+    <p>💰 200.000đ</p>
+    <button onclick="buy()">Mua ngay</button>
+  </div>
+
+  <div class="card">
+    <h2>Trái Leopard</h2>
+    <p>Hiếm - mạnh</p>
+    <p>💰 150.000đ</p>
+    <button onclick="buy()">Mua ngay</button>
+  </div>
+
+</div>
+
+<div class="footer">
+  📞 Liên hệ Zalo: 0123456789
+</div>
+
+<script>
+function buy() {
+  alert("Liên hệ Zalo để mua nhé!");
+}
+</script>
 
 </body>
 </html>
